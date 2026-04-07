@@ -1,0 +1,3 @@
+declare greeting: [12] = "Hello World!";
+print(greeting);
+println;

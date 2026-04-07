@@ -68,6 +68,9 @@ pub enum Token {
     #[token("!")]
     Bang,
 
+    #[token("?")]
+    Question,
+
     #[token("~")]
     Tilde,
 
@@ -122,21 +125,9 @@ pub enum Token {
     #[token("dd")]
     Dd,
 
-    //declare pointer (6 byte)
-    #[token("dp")]
-    Dp,
-
-    //declare float (6 byte)
-    #[token("df")]
-    Df,
-
     //declare quad word (8 byte)
     #[token("dq")]
     Dq,
-
-    //declare ten (10 byte)
-    #[token("dt")]
-    Dt,
 
     //reserve byte (1 byte)
     #[token("rb")]
@@ -150,22 +141,9 @@ pub enum Token {
     #[token("rd")]
     Rd,
 
-    //reserve pointer (6 byte)
-    #[token("rp")]
-    Rp,
-
-    //reserve float (6 byte)
-    #[token("rf")]
-    Rf,
-
     //reserve quad word (8 byte)
     #[token("rq")]
     Rq,
-
-    //reserve ten (10 byte)
-    #[token("rt")]
-    Rt,
-
 
     #[token("fn")]
     Function,
@@ -181,6 +159,15 @@ pub enum Token {
 
     #[token("for")]
     For,
+
+    #[token("in")]
+    In,
+
+    #[token("label")]
+    Label,
+
+    #[token("goto")]
+    Goto,
 
     #[token("return")]
     Return,
@@ -208,5 +195,14 @@ pub enum Token {
 
     #[token("end")]
     End,
+
+    #[token("tostr")]
+    ToStr,
+
+    #[token("toint")]
+    ToInt,
+
+    #[token("println")]
+    PrintLn,
 
 }
